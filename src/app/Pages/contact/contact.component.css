@@ -1,0 +1,77 @@
+
+
+.contactBackground {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9d0a3;
+}
+
+.redLine {
+  width: 24%;
+  height: 4px;
+  background-color: #da001e;
+  border-radius: 30px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 13%);
+  margin: 5%;
+  padding: 50px 10%;
+  
+}
+
+@media (min-width: 575px) {
+  .contactContainer {
+    padding: 50px 2%;
+  }
+}
+
+.contact-form {
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.contact-form .form-control {
+  margin: 10px;
+}
+
+.contact-image img {
+  width: 20%;
+}
+.contact-form form {
+  padding: 14%;
+}
+
+.contact-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}

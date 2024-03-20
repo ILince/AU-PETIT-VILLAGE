@@ -1,0 +1,12 @@
+.bg-image {
+  background-color: #fff;
+  border: 10px solid #066db1;
+}
+.bg-product {
+  background-color: #f9d0a3;
+}
+
+.product-price {
+  font-size: 1.5em;
+  font-weight: 600;
+}

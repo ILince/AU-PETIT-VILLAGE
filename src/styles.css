@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+/* lobal styles*/
+
+@font-face {
+  font-family: "bubbleboddy";
+  src: url(./assets/fonts/bubbleboddy_neue/BubbleboddyNeue-Bold\ Trial.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #444;
+  font-weight: 400;
+  background-color: #eee;
+  font-variation-settings: "wdth" 100, "YTLC" 501;
+}
+
+h1 {
+  font-family: "bubbleboddy", sans-serif;
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "bubbleboddy", sans-serif;
+  color: #1e1e1e;
+  font-weight: 600;
+}
+h3 {
+  font-family: "bubbleboddy", sans-serif;
+  color: #1e1e1e;
+  font-weight: 600;
+}

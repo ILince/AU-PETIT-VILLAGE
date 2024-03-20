@@ -1,0 +1,53 @@
+<!-- Formulaire de recherche et sélecteur prix -->
+<div class="form-group m-3">
+
+  <!-- Recherche pas nom, filter-by-name.pipe -->
+  <div>
+    <label class="m-2" for="search-text"
+      >Vous chercher une figurine en particulier ?</label
+    >
+    <input
+      class="form-control"
+      id="search-text"
+      aria-describedby="search-text"
+      [(ngModel)]="searchText"
+      placeholder="Nom du personnage ..."
+      autofocus
+    />
+  </div>
+
+  <!-- Trie des prix, sort-by-price.pipe -->
+  <div>
+    <label class="m-2" for="sorting">Trier par :</label>
+    <select class="form-control" id="sorting" [(ngModel)]="sortOrder">
+      <option value="asc">Prix : croissant</option>
+      <option value="desc">Prix : décroissant</option>
+    </select>
+  </div>
+</div>
+
+<!-- Affichage de tous les produits avec la data du fichier (products.service) -->
+<div class="card-container g-3 p-5">
+  <div
+    *ngFor="
+      let product of products
+        | sortByPrice : sortOrder
+        | filterByName : searchText
+    "
+    class="card m-2"
+    style="width: 18rem"
+  >
+    <img [src]="product.imageUrl" class="card-img-top" alt="Product Image" />
+    <div class="card-body">
+      <h2 class="card-title">{{ product.name }}</h2>
+      <hr />
+      <p class="card-text">{{ product.description }}</p>
+      <p class="product-price">{{ product.price }}€</p>
+      <p>
+        <a [routerLink]="['/Product', product.id]" class="btn btn-warning"
+          >Voir le produit</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
